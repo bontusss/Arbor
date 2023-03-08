@@ -1,0 +1,43 @@
+
+/* Base */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:wght@300;400;600&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+$body: #333;
+$primaryfont: "DM Sans", sans-serif;
+$secondaryfont: "Poppins", sans-serif;
+$black: #1a1a1a;
+$blue: #0085ff;
+$white: #fcfcfc;
+$red: #ff3c30;
+$yellow: #ffcc00;
+$green: #3cd278;
+$blue-80: #99ceff;
+$blue-95: #e3f2ff;
+$blue-97: #f2f9ff;
+$black-46: #757575;
+$black-73: #bababa;
+$black-84: #d6d6d6;
+$black-96: #f4f4f4;
+$black-99: #fcfcfc;
+
+%clearfix {
+  display: block;
+  clear: both;
+}
+
+/* Default body Size */
+body {
+  color: $body;
+  font-family: $primaryfont;
+  font-size: 1.6em;
+}

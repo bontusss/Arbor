@@ -1,0 +1,386 @@
+/* Arbor is a css design component inspired by the Scalabl design framework.
+Wriiten by Bontus Mayor <> ikwecheghu@gmail.com
+https://github.com/bontusss/arbor
+Started today => 7th march 2023
+*/
+/* Base */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:wght@300;400;600&display=swap");
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Default body Size */
+body {
+  color: #333;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6em;
+}
+
+/* filled buttons */
+.btn {
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.75rem 3rem;
+  text-decoration: none;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.btn-1 {
+  border-radius: 5px;
+}
+
+.btn-2 {
+  border-radius: 10px;
+}
+
+.btn-3 {
+  border-radius: 26.5px;
+}
+
+.btn-primary {
+  background-color: #0085ff;
+  color: #fcfcfc;
+  border-color: #0085ff;
+  transition: 500ms ease;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #0078e6;
+}
+
+.btn-secondary {
+  background-color: #757575;
+  color: #fcfcfc;
+  border-color: #757575;
+  transition: 500ms ease;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #686868;
+}
+
+.btn-success {
+  background-color: #3cd278;
+  color: #fcfcfc;
+  border-color: #3cd278;
+  transition: 500ms ease;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background-color: #2ec76b;
+}
+
+.btn-danger {
+  background-color: #ff3c30;
+  color: #fcfcfc;
+  border-color: #ff3c30;
+  transition: 500ms ease;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  background-color: #ff2417;
+}
+
+.btn-danger {
+  background-color: #ff3c30;
+  color: #fcfcfc;
+  border-color: #ff3c30;
+  transition: 500ms ease;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  background-color: #ff6c63;
+  color: #fcfcfc;
+}
+
+.btn-warning {
+  background-color: #ffcc00;
+  color: #fcfcfc;
+  border-color: #ffcc00;
+  transition: 500ms ease;
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
+  background-color: #e6b800;
+}
+
+.btn-muted {
+  background-color: #d6d6d6;
+  color: #fcfcfc;
+  border-color: #d6d6d6;
+  transition: 500ms ease;
+}
+.btn-muted:hover, .btn-muted:focus, .btn-muted:active {
+  background-color: #c9c9c9;
+}
+
+.btn-info {
+  background-color: #99ceff;
+  color: #fcfcfc;
+  border-color: #99ceff;
+  transition: 500ms ease;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+  background-color: #80c2ff;
+}
+
+.btn-dark {
+  background-color: #1a1a1a;
+  color: #fcfcfc;
+  border-color: #1a1a1a;
+  transition: 500ms ease;
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  background-color: #0d0d0d;
+}
+
+.btn-dark {
+  background-color: #1a1a1a;
+  color: #fcfcfc;
+  border-color: #1a1a1a;
+  transition: 500ms ease;
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  background-color: #404040;
+  color: #fcfcfc;
+}
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #fcfcfc;
+  border-color: #f4f4f4;
+  transition: 500ms ease;
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  background-color: #e7e7e7;
+}
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #bababa;
+  border-color: #f4f4f4;
+  transition: 500ms ease;
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  background-color: #e7e7e7;
+  color: #fcfcfc;
+}
+
+/* Outlined Buttons */
+.btn-outline-primary {
+  border: 1px solid #0085ff;
+  color: #0085ff;
+  transition: 500ms ease;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: #0078e6;
+  color: #fcfcfc;
+}
+
+.btn-outline-secondary {
+  border: 1px solid #757575;
+  color: #757575;
+  transition: 500ms ease;
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active {
+  background-color: #686868;
+  color: #fcfcfc;
+}
+
+.btn-outline-success {
+  border: 1px solid #3cd278;
+  color: #3cd278;
+  transition: 500ms ease;
+}
+.btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active {
+  background-color: #2ec76b;
+  color: #fcfcfc;
+}
+
+.btn-outline-danger {
+  border: 1px solid #ff3c30;
+  color: #ff3c30;
+  transition: 500ms ease;
+}
+.btn-outline-danger:hover, .btn-outline-danger:focus, .btn-outline-danger:active {
+  background-color: #ff2417;
+  color: #fcfcfc;
+}
+
+.btn-outline-warning {
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+  transition: 500ms ease;
+}
+.btn-outline-warning:hover, .btn-outline-warning:focus, .btn-outline-warning:active {
+  background-color: #e6b800;
+  color: #fcfcfc;
+}
+
+.btn-outline-muted {
+  border: 1px solid #d6d6d6;
+  color: #d6d6d6;
+  transition: 500ms ease;
+}
+.btn-outline-muted:hover, .btn-outline-muted:focus, .btn-outline-muted:active {
+  background-color: #c9c9c9;
+  color: #fcfcfc;
+}
+
+.btn-outline-info {
+  border: 1px solid #99ceff;
+  color: #99ceff;
+  transition: 500ms ease;
+}
+.btn-outline-info:hover, .btn-outline-info:focus, .btn-outline-info:active {
+  background-color: #80c2ff;
+  color: #fcfcfc;
+}
+
+.btn-outline-dark {
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  transition: 500ms ease;
+}
+.btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active {
+  background-color: #0d0d0d;
+  color: #fcfcfc;
+}
+
+.btn-outline-light {
+  border: 1px solid #f4f4f4;
+  color: #f4f4f4;
+  transition: 500ms ease;
+}
+.btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light:active {
+  background-color: #e7e7e7;
+  color: #fcfcfc;
+}
+
+/* texts */
+.text-primary {
+  color: #0085ff;
+}
+
+.text-secondary {
+  color: #757575;
+}
+
+.text-success {
+  color: #3cd278;
+}
+
+.text-danger {
+  color: #ff3c30;
+}
+
+.text-warning {
+  color: #ffcc00;
+}
+
+.text-muted {
+  color: #d6d6d6;
+}
+
+.text-info {
+  color: #99ceff;
+}
+
+.text-dark {
+  color: #1a1a1a;
+}
+
+.text-light {
+  color: #f4f4f4;
+}
+
+.btn,
+button,
+dd,
+dt,
+li {
+  margin-bottom: 1rem;
+}
+
+fieldset,
+input,
+select,
+textarea {
+  margin-bottom: 1.5rem;
+}
+
+blockquote,
+dl,
+figure,
+form,
+ol,
+p,
+pre,
+table,
+ul {
+  -webkit-mask-box-image-width: 2.5rem;
+          mask-border-width: 2.5rem;
+}
+
+.h1 {
+  font-size: 4.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.h3 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.h4 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+.sub-header {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-weight: 500;
+}
+
+.small {
+  display: block;
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}/*# sourceMappingURL=arbor.css.map */
