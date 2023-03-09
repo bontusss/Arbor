@@ -30,6 +30,23 @@ $black-84: #d6d6d6;
 $black-96: #f4f4f4;
 $black-99: #fcfcfc;
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $blue $black-73;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $black-73;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $black-46;
+}
+
 %clearfix {
   display: block;
   clear: both;

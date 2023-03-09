@@ -15,6 +15,23 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0085ff #bababa;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #bababa;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #757575;
+}
+
 /* Default body Size */
 body {
   color: #333;
@@ -296,6 +313,352 @@ body {
 
 .text-light {
   color: #f4f4f4;
+}
+
+/* Grid */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1800px;
+  width: 100%;
+}
+
+.col {
+  grid-row: row;
+  flex-grow: 1;
+  flex-direction: left;
+  margin: 0.25%;
+  float: left;
+}
+
+@media screen and (max-width: -1px) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+}
+.hidden-xs-up {
+  display: none !important;
+}
+
+@media screen and (max-width: 575px) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hidden-md-down {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hidden-md-up {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .hidden-lg-down {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hidden-lg-up {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1799px) {
+  .hidden-xl-down {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .hidden-xl-up {
+    display: none !important;
+  }
+}
+.row {
+  margin: 0.25 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.row .col-1 {
+  flex-basis: 7.8333333333%;
+  margin: 0.25%;
+}
+.row .col-2 {
+  flex-basis: 16.1666666667%;
+  margin: 0.25%;
+}
+.row .col-3 {
+  flex-basis: 24.5%;
+  margin: 0.25%;
+}
+.row .col-4 {
+  flex-basis: 32.8333333333%;
+  margin: 0.25%;
+}
+.row .col-5 {
+  flex-basis: 41.1666666667%;
+  margin: 0.25%;
+}
+.row .col-6 {
+  flex-basis: 49.5%;
+  margin: 0.25%;
+}
+.row .col-7 {
+  flex-basis: 57.8333333333%;
+  margin: 0.25%;
+}
+.row .col-8 {
+  flex-basis: 66.1666666667%;
+  margin: 0.25%;
+}
+.row .col-9 {
+  flex-basis: 74.5%;
+  margin: 0.25%;
+}
+.row .col-10 {
+  flex-basis: 82.8333333333%;
+  margin: 0.25%;
+}
+.row .col-11 {
+  flex-basis: 91.1666666667%;
+  margin: 0.25%;
+}
+.row .col-12 {
+  flex-basis: 99.5%;
+  margin: 0.25%;
+}
+@media screen and (min-width: 576px) {
+  .row .col-sm-1 {
+    flex-basis: 7.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-sm-2 {
+    flex-basis: 16.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-sm-3 {
+    flex-basis: 24.5%;
+    margin: 0.25%;
+  }
+  .row .col-sm-4 {
+    flex-basis: 32.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-sm-5 {
+    flex-basis: 41.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-sm-6 {
+    flex-basis: 49.5%;
+    margin: 0.25%;
+  }
+  .row .col-sm-7 {
+    flex-basis: 57.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-sm-8 {
+    flex-basis: 66.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-sm-9 {
+    flex-basis: 74.5%;
+    margin: 0.25%;
+  }
+  .row .col-sm-10 {
+    flex-basis: 82.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-sm-11 {
+    flex-basis: 91.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-sm-12 {
+    flex-basis: 99.5%;
+    margin: 0.25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .row .col-md-1 {
+    flex-basis: 7.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-md-2 {
+    flex-basis: 16.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-md-3 {
+    flex-basis: 24.5%;
+    margin: 0.25%;
+  }
+  .row .col-md-4 {
+    flex-basis: 32.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-md-5 {
+    flex-basis: 41.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-md-6 {
+    flex-basis: 49.5%;
+    margin: 0.25%;
+  }
+  .row .col-md-7 {
+    flex-basis: 57.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-md-8 {
+    flex-basis: 66.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-md-9 {
+    flex-basis: 74.5%;
+    margin: 0.25%;
+  }
+  .row .col-md-10 {
+    flex-basis: 82.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-md-11 {
+    flex-basis: 91.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-md-12 {
+    flex-basis: 99.5%;
+    margin: 0.25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .row .col-lg-1 {
+    flex-basis: 7.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-lg-2 {
+    flex-basis: 16.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-lg-3 {
+    flex-basis: 24.5%;
+    margin: 0.25%;
+  }
+  .row .col-lg-4 {
+    flex-basis: 32.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-lg-5 {
+    flex-basis: 41.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-lg-6 {
+    flex-basis: 49.5%;
+    margin: 0.25%;
+  }
+  .row .col-lg-7 {
+    flex-basis: 57.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-lg-8 {
+    flex-basis: 66.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-lg-9 {
+    flex-basis: 74.5%;
+    margin: 0.25%;
+  }
+  .row .col-lg-10 {
+    flex-basis: 82.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-lg-11 {
+    flex-basis: 91.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-lg-12 {
+    flex-basis: 99.5%;
+    margin: 0.25%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .row .col-xl-1 {
+    flex-basis: 7.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-xl-2 {
+    flex-basis: 16.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-xl-3 {
+    flex-basis: 24.5%;
+    margin: 0.25%;
+  }
+  .row .col-xl-4 {
+    flex-basis: 32.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-xl-5 {
+    flex-basis: 41.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-xl-6 {
+    flex-basis: 49.5%;
+    margin: 0.25%;
+  }
+  .row .col-xl-7 {
+    flex-basis: 57.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-xl-8 {
+    flex-basis: 66.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-xl-9 {
+    flex-basis: 74.5%;
+    margin: 0.25%;
+  }
+  .row .col-xl-10 {
+    flex-basis: 82.8333333333%;
+    margin: 0.25%;
+  }
+  .row .col-xl-11 {
+    flex-basis: 91.1666666667%;
+    margin: 0.25%;
+  }
+  .row .col-xl-12 {
+    flex-basis: 99.5%;
+    margin: 0.25%;
+  }
+}
+
+/*remove before launch */
+.row.grid [class*=col-] {
+  min-height: 30px;
+  outline: 1px solid #c0c0c0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.row.grid [class*=col-].higher {
+  min-height: 60px;
+}
+.row.grid .col {
+  min-height: 30px;
+  outline: 1px solid #c0c0c0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .btn,

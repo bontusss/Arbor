@@ -1,1 +1,109 @@
- 
+/* Grid */
+
+$grid__bp-sm: 576;
+$grid__bp-md: 768;
+$grid__bp-lg: 1024;
+$grid__bp-xl: 1800;
+$gap: 0.25;
+$grid__cols: 12;
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1800px;
+  width: 100%;
+}
+
+.col {
+	grid-row: row;
+	flex-grow: 1;
+	flex-direction: left;
+	margin: $gap * 1%;
+	float: left;
+}
+
+$map-grid-props: (
+	"": 0,
+	"-sm": $grid__bp-sm,
+	"-md": $grid__bp-md,
+	"-lg": $grid__bp-lg,
+	"-xl": $grid__bp-xl,
+);
+
+@mixin create-mq($breakpoint, $min-or-max) {
+	@if ($breakpoint == 0) {
+		@content;
+	} @else {
+		@media screen and (#{$min-or-max}-width: $breakpoint *1px) {
+			@content;
+		}
+	}
+}
+
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+	@include create-mq($breakpoint, "min") {
+		@for $i from 1 through $grid-cols {
+			$margin: 100 / ($grid-cols / $i);
+			.col#{$modifier}-#{$i} {
+				flex-basis: ($margin - ($gap * 2)) * 1%;
+				margin: $gap * 1%;
+			}
+		}
+	}
+}
+
+@each $modifier, $breakpoint in $map-grid-props {
+	@if ($modifier == "") {
+		$modifier: "-xs";
+	}
+	@include create-mq($breakpoint - 1, "max") {
+		.hidden#{$modifier}-down {
+			display: none !important;
+		}
+	}
+	@include create-mq($breakpoint, "min") {
+		.hidden#{$modifier}-up {
+			display: none !important;
+		}
+	}
+}
+
+.row {
+	margin: $gap auto;
+	& {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	@each $modifier, $breakpoint in $map-grid-props {
+		@include create-col-classes($modifier, $grid__cols, $breakpoint);
+	}
+}
+
+
+/*remove before launch */
+// info: remove
+.row.grid {
+    [class*="col-"] {
+        &.higher {
+            min-height: 60px;
+        }
+        min-height: 30px;
+        outline: 1px solid #c0c0c0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .col {
+        min-height: 30px;
+        outline: 1px solid #c0c0c0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
