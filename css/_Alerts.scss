@@ -1,0 +1,120 @@
+/* Alerts */
+
+$alert-type: (
+  "primary": $blue,
+  "success": $green,
+  "danger": $red,
+  "warning": $yellow,
+  "info": $blue-80,
+);
+
+@each $type, $class in $alert-type {
+  ar-alert[name="#{$type}"] {
+    display: block;
+    background-color: $class;
+    color: $white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  ar-alert[type="has-icon"]::after {
+    font-family: "Material Icons";
+    content: "close";
+    margin-left: 15px;
+    color: darken($class, 15%);
+    float: right;
+    font-size: 1rem;
+    border: 0px solid white;
+    background-color: $white;
+    padding: 0.1rem 0.6rem;
+    border-radius: 50%;
+    line-height: 20px;
+    cursor: pointer;
+  }
+}
+
+ar-alert[type="has-icon"][name="success"]::before {
+  font-family: "Material Icons";
+  content: "done";
+  margin-right: 15px;
+}
+
+ar-alert[type="has-icon"][name="danger"]::before {
+  font-family: "Material Icons";
+  content: "error_outline";
+  margin-right: 15px;
+}
+
+ar-alert[type="has-icon"][name="primary"]::before {
+  font-family: "Material Icons";
+  content: "alarm";
+  margin-right: 15px;
+}
+
+ar-alert[type="has-icon"][name="info"]::before {
+  font-family: "Material Icons";
+  content: "check_circle";
+  margin-right: 15px;
+}
+
+ar-alert[type="has-icon"][name="warning"]::before {
+  font-family: "Material Icons";
+  content: "notification_important";
+  margin-right: 15px;
+}
+
+@each $type, $class in $alert-type {
+  ar-alert[name="#{$type}-outline"] {
+    display: block;
+    background-color: lighten($class, 15%);
+    color: $white;
+    border: 1px solid $class;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  @if ($type == "info") {
+    ar-alert[name="#{$type}-outline"] {
+      color: black;
+    }
+
+    ar-alert[name="#{$type}-outline"]::after {
+      background-color: $class;
+      color: white;
+    }
+  } @else {
+    ar-alert[name="#{$type}-outline"]::after {
+      background-color: $class;
+      color: white;
+    }
+  }
+}
+
+ar-alert[type="has-icon"][name="success-outline"]::before {
+    font-family: "Material Icons";
+    content: "done";
+    margin-right: 15px;
+  }
+  
+  ar-alert[type="has-icon"][name="danger-outline"]::before {
+    font-family: "Material Icons";
+    content: "error_outline";
+    margin-right: 15px;
+  }
+  
+  ar-alert[type="has-icon"][name="primary-outline"]::before {
+    font-family: "Material Icons";
+    content: "alarm";
+    margin-right: 15px;
+  }
+  
+  ar-alert[type="has-icon"][name="info-outline"]::before {
+    font-family: "Material Icons";
+    content: "check_circle";
+    margin-right: 15px;
+  }
+  
+  ar-alert[type="has-icon"][name="warning-outline"]::before {
+    font-family: "Material Icons";
+    content: "notification_important";
+    margin-right: 15px;
+  }

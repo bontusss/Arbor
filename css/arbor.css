@@ -5,6 +5,8 @@ Started today => 7th march 2023
 */
 /* Base */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:wght@300;400;600&display=swap");
+/* Material Design */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 *,
 *:after,
 *:before {
@@ -12,14 +14,31 @@ Started today => 7th march 2023
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 10px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0085ff #bababa;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #bababa;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #757575;
 }
 
 /* Default body Size */
 body {
   color: #333;
   font-family: "DM Sans", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4rem;
 }
 
 /* filled buttons */
@@ -383,4 +402,254 @@ p {
 
 .bold {
   font-weight: bold;
+}
+
+/* Alerts */
+ar-alert[name=primary] {
+  display: block;
+  background-color: #0085ff;
+  color: #fcfcfc;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[type=has-icon]::after {
+  font-family: "Material Icons";
+  content: "close";
+  margin-left: 15px;
+  color: #005db3;
+  float: right;
+  font-size: 1rem;
+  border: 0px solid white;
+  background-color: #fcfcfc;
+  padding: 0.1rem 0.6rem;
+  border-radius: 50%;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+ar-alert[name=success] {
+  display: block;
+  background-color: #3cd278;
+  color: #fcfcfc;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[type=has-icon]::after {
+  font-family: "Material Icons";
+  content: "close";
+  margin-left: 15px;
+  color: #249d55;
+  float: right;
+  font-size: 1rem;
+  border: 0px solid white;
+  background-color: #fcfcfc;
+  padding: 0.1rem 0.6rem;
+  border-radius: 50%;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+ar-alert[name=danger] {
+  display: block;
+  background-color: #ff3c30;
+  color: #fcfcfc;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[type=has-icon]::after {
+  font-family: "Material Icons";
+  content: "close";
+  margin-left: 15px;
+  color: #e30d00;
+  float: right;
+  font-size: 1rem;
+  border: 0px solid white;
+  background-color: #fcfcfc;
+  padding: 0.1rem 0.6rem;
+  border-radius: 50%;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+ar-alert[name=warning] {
+  display: block;
+  background-color: #ffcc00;
+  color: #fcfcfc;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[type=has-icon]::after {
+  font-family: "Material Icons";
+  content: "close";
+  margin-left: 15px;
+  color: #b38f00;
+  float: right;
+  font-size: 1rem;
+  border: 0px solid white;
+  background-color: #fcfcfc;
+  padding: 0.1rem 0.6rem;
+  border-radius: 50%;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+ar-alert[name=info] {
+  display: block;
+  background-color: #99ceff;
+  color: #fcfcfc;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[type=has-icon]::after {
+  font-family: "Material Icons";
+  content: "close";
+  margin-left: 15px;
+  color: #4da9ff;
+  float: right;
+  font-size: 1rem;
+  border: 0px solid white;
+  background-color: #fcfcfc;
+  padding: 0.1rem 0.6rem;
+  border-radius: 50%;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+ar-alert[type=has-icon][name=success]::before {
+  font-family: "Material Icons";
+  content: "done";
+  margin-right: 15px;
+}
+
+ar-alert[type=has-icon][name=danger]::before {
+  font-family: "Material Icons";
+  content: "error_outline";
+  margin-right: 15px;
+}
+
+ar-alert[type=has-icon][name=primary]::before {
+  font-family: "Material Icons";
+  content: "alarm";
+  margin-right: 15px;
+}
+
+ar-alert[type=has-icon][name=info]::before {
+  font-family: "Material Icons";
+  content: "check_circle";
+  margin-right: 15px;
+}
+
+ar-alert[type=has-icon][name=warning]::before {
+  font-family: "Material Icons";
+  content: "notification_important";
+  margin-right: 15px;
+}
+
+ar-alert[name=primary-outline] {
+  display: block;
+  background-color: #4daaff;
+  color: #fcfcfc;
+  border: 1px solid #0085ff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[name=primary-outline]::after {
+  background-color: #0085ff;
+  color: white;
+}
+
+ar-alert[name=success-outline] {
+  display: block;
+  background-color: #7ae0a3;
+  color: #fcfcfc;
+  border: 1px solid #3cd278;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[name=success-outline]::after {
+  background-color: #3cd278;
+  color: white;
+}
+
+ar-alert[name=danger-outline] {
+  display: block;
+  background-color: #ff847d;
+  color: #fcfcfc;
+  border: 1px solid #ff3c30;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[name=danger-outline]::after {
+  background-color: #ff3c30;
+  color: white;
+}
+
+ar-alert[name=warning-outline] {
+  display: block;
+  background-color: #ffdb4d;
+  color: #fcfcfc;
+  border: 1px solid #ffcc00;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[name=warning-outline]::after {
+  background-color: #ffcc00;
+  color: white;
+}
+
+ar-alert[name=info-outline] {
+  display: block;
+  background-color: #e6f3ff;
+  color: #fcfcfc;
+  border: 1px solid #99ceff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ar-alert[name=info-outline] {
+  color: black;
+}
+
+ar-alert[name=info-outline]::after {
+  background-color: #99ceff;
+  color: white;
+}
+
+ar-alert[type=has-icon][name=success-outline]::before {
+  font-family: "Material Icons";
+  content: "done";
+  margin-right: 15px;
+}
+
+ar-alert[type=has-icon][name=danger-outline]::before {
+  font-family: "Material Icons";
+  content: "error_outline";
+  margin-right: 15px;
+}
+
+ar-alert[type=has-icon][name=primary-outline]::before {
+  font-family: "Material Icons";
+  content: "alarm";
+  margin-right: 15px;
+}
+
+ar-alert[type=has-icon][name=info-outline]::before {
+  font-family: "Material Icons";
+  content: "check_circle";
+  margin-right: 15px;
+}
+
+ar-alert[type=has-icon][name=warning-outline]::before {
+  font-family: "Material Icons";
+  content: "notification_important";
+  margin-right: 15px;
 }/*# sourceMappingURL=arbor.css.map */
