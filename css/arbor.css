@@ -42,7 +42,7 @@ body {
 }
 
 /* filled buttons */
-.btn {
+ar-button {
   border-style: solid;
   border-width: 1px;
   padding: 0.75rem 3rem;
@@ -66,43 +66,55 @@ body {
   border-radius: 26.5px;
 }
 
-.btn-primary {
+ar-button[name=primary] {
+  display: inline-block;
   background-color: #0085ff;
   color: #fcfcfc;
   border-color: #0085ff;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+ar-button[name=primary]:hover, ar-button[name=primary]:focus, ar-button[name=primary]:active {
   background-color: #0078e6;
 }
 
-.btn-secondary {
+ar-button[name=secondary] {
+  display: inline-block;
   background-color: #757575;
   color: #fcfcfc;
   border-color: #757575;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+ar-button[name=secondary]:hover, ar-button[name=secondary]:focus, ar-button[name=secondary]:active {
   background-color: #686868;
 }
 
-.btn-success {
+ar-button[name=success] {
+  display: inline-block;
   background-color: #3cd278;
   color: #fcfcfc;
   border-color: #3cd278;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-success:hover, .btn-success:focus, .btn-success:active {
+ar-button[name=success]:hover, ar-button[name=success]:focus, ar-button[name=success]:active {
   background-color: #2ec76b;
 }
 
-.btn-danger {
+ar-button[name=danger] {
+  display: inline-block;
   background-color: #ff3c30;
   color: #fcfcfc;
   border-color: #ff3c30;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+ar-button[name=danger]:hover, ar-button[name=danger]:focus, ar-button[name=danger]:active {
   background-color: #ff2417;
 }
 
@@ -117,43 +129,55 @@ body {
   color: #fcfcfc;
 }
 
-.btn-warning {
+ar-button[name=warning] {
+  display: inline-block;
   background-color: #ffcc00;
   color: #fcfcfc;
   border-color: #ffcc00;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
+ar-button[name=warning]:hover, ar-button[name=warning]:focus, ar-button[name=warning]:active {
   background-color: #e6b800;
 }
 
-.btn-muted {
+ar-button[name=muted] {
+  display: inline-block;
   background-color: #d6d6d6;
   color: #fcfcfc;
   border-color: #d6d6d6;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-muted:hover, .btn-muted:focus, .btn-muted:active {
+ar-button[name=muted]:hover, ar-button[name=muted]:focus, ar-button[name=muted]:active {
   background-color: #c9c9c9;
 }
 
-.btn-info {
+ar-button[name=info] {
+  display: inline-block;
   background-color: #99ceff;
   color: #fcfcfc;
   border-color: #99ceff;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-info:hover, .btn-info:focus, .btn-info:active {
+ar-button[name=info]:hover, ar-button[name=info]:focus, ar-button[name=info]:active {
   background-color: #80c2ff;
 }
 
-.btn-dark {
+ar-button[name=dark] {
+  display: inline-block;
   background-color: #1a1a1a;
   color: #fcfcfc;
   border-color: #1a1a1a;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+ar-button[name=dark]:hover, ar-button[name=dark]:focus, ar-button[name=dark]:active {
   background-color: #0d0d0d;
 }
 
@@ -168,116 +192,137 @@ body {
   color: #fcfcfc;
 }
 
-.btn-light {
+ar-button[name=light] {
+  display: inline-block;
   background-color: #f4f4f4;
   color: #fcfcfc;
   border-color: #f4f4f4;
   transition: 500ms ease;
+  cursor: pointer;
+  text-transform: capitalize;
 }
-.btn-light:hover, .btn-light:focus, .btn-light:active {
+ar-button[name=light]:hover, ar-button[name=light]:focus, ar-button[name=light]:active {
   background-color: #e7e7e7;
 }
 
-.btn-light {
+ar-button[name=light] {
   background-color: #f4f4f4;
   color: #bababa;
   border-color: #f4f4f4;
   transition: 500ms ease;
 }
-.btn-light:hover, .btn-light:focus, .btn-light:active {
+ar-button[name=light]:hover, ar-button[name=light]:focus, ar-button[name=light]:active {
   background-color: #e7e7e7;
   color: #fcfcfc;
 }
 
 /* Outlined Buttons */
-.btn-outline-primary {
+ar-button[name=primary-outline] {
   border: 1px solid #0085ff;
   color: #0085ff;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+ar-button[name=primary-outline]:hover, ar-button[name=primary-outline]:focus, ar-button[name=primary-outline]:active {
   background-color: #0078e6;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
-.btn-outline-secondary {
+ar-button[name=secondary-outline] {
   border: 1px solid #757575;
   color: #757575;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active {
+ar-button[name=secondary-outline]:hover, ar-button[name=secondary-outline]:focus, ar-button[name=secondary-outline]:active {
   background-color: #686868;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
-.btn-outline-success {
+ar-button[name=success-outline] {
   border: 1px solid #3cd278;
   color: #3cd278;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active {
+ar-button[name=success-outline]:hover, ar-button[name=success-outline]:focus, ar-button[name=success-outline]:active {
   background-color: #2ec76b;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
-.btn-outline-danger {
+ar-button[name=danger-outline] {
   border: 1px solid #ff3c30;
   color: #ff3c30;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-danger:hover, .btn-outline-danger:focus, .btn-outline-danger:active {
+ar-button[name=danger-outline]:hover, ar-button[name=danger-outline]:focus, ar-button[name=danger-outline]:active {
   background-color: #ff2417;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
-.btn-outline-warning {
+ar-button[name=warning-outline] {
   border: 1px solid #ffcc00;
   color: #ffcc00;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-warning:hover, .btn-outline-warning:focus, .btn-outline-warning:active {
+ar-button[name=warning-outline]:hover, ar-button[name=warning-outline]:focus, ar-button[name=warning-outline]:active {
   background-color: #e6b800;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
-.btn-outline-muted {
+ar-button[name=muted-outline] {
   border: 1px solid #d6d6d6;
   color: #d6d6d6;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-muted:hover, .btn-outline-muted:focus, .btn-outline-muted:active {
+ar-button[name=muted-outline]:hover, ar-button[name=muted-outline]:focus, ar-button[name=muted-outline]:active {
   background-color: #c9c9c9;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
-.btn-outline-info {
+ar-button[name=info-outline] {
   border: 1px solid #99ceff;
   color: #99ceff;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-info:hover, .btn-outline-info:focus, .btn-outline-info:active {
+ar-button[name=info-outline]:hover, ar-button[name=info-outline]:focus, ar-button[name=info-outline]:active {
   background-color: #80c2ff;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
-.btn-outline-dark {
+ar-button[name=dark-outline] {
   border: 1px solid #1a1a1a;
   color: #1a1a1a;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active {
+ar-button[name=dark-outline]:hover, ar-button[name=dark-outline]:focus, ar-button[name=dark-outline]:active {
   background-color: #0d0d0d;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
-.btn-outline-light {
+ar-button[name=light-outline] {
   border: 1px solid #f4f4f4;
   color: #f4f4f4;
   transition: 500ms ease;
+  text-transform: capitalize;
 }
-.btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light:active {
+ar-button[name=light-outline]:hover, ar-button[name=light-outline]:focus, ar-button[name=light-outline]:active {
   background-color: #e7e7e7;
   color: #fcfcfc;
+  cursor: pointer;
 }
 
 /* texts */
