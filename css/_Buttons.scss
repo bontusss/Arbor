@@ -11,7 +11,7 @@ $style-type: (
 );
 
 /* filled buttons */
-.btn {
+ar-button {
   border-style: solid;
   border-width: 1px;
   padding: 0.75rem 3rem;
@@ -37,11 +37,14 @@ $style-type: (
 }
 
 @each $type, $class in $style-type {
-  .btn-#{$type} {
+  ar-button[name=#{$type}] {
+    display: inline-block;
     background-color: $class;
     color: $white;
     border-color: $class;
     transition: 500ms ease;
+    cursor: pointer;
+    text-transform: capitalize;
 
     &:hover,
     &:focus,
@@ -51,7 +54,7 @@ $style-type: (
   }
 
   @if ($type == "light") {
-    .btn-#{$type} {
+    ar-button[name=#{$type}] {
       background-color: $class;
       color: $black-73;
       border-color: $class;
@@ -98,16 +101,18 @@ $style-type: (
 /* Outlined Buttons */
 
 @each $type, $class in $style-type {
-  .btn-outline-#{$type} {
+  ar-button[name="#{$type}-outline"] {
     border: 1px solid $class;
     color: $class;
     transition: 500ms ease;
+    text-transform: capitalize;
 
     &:hover,
     &:focus,
     &:active {
       background-color: darken($class, 5%);
       color: $white;
+      cursor: pointer;
     }
   }
 }
